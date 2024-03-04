@@ -35,8 +35,8 @@ const Login = () => {
     <div className="bg-white h-[100vh] w-full flex justify-between items-center">
       <img
         className="w-[60%] h-[100vh] object-cover"
-        src="https://lh5.googleusercontent.com/p/AF1QipPZSK3eJYRjsRsL6ND-YEGDKsC8pFUt9rzFSeo1=w1080-k-no"
-        alt=""
+        src="https://gumlet.assettype.com/freepressjournal/2023-03/52a4f144-573d-4812-95fc-f95703973c39/FPJ_design__36_.jpg"
+        alt="background"
       />
       <div className="w-[40%] flex justify-center items-start flex-col pl-8">
         <p className="text-3xl font-semibold pb-2 border-b-2 border-green-500">
@@ -74,7 +74,7 @@ const Login = () => {
             <input type="checkbox" id="remember" className="accent-blue-500" />{" "}
             Remember Me
           </div> */}
-          <button className="bg-blue-500 mt-5 text-white px-6 py-2 text-xl rounded-md hover:bg-blue-700 ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all flex justify-center items-center">
+          <button className="bg-black mt-5 text-white px-6 py-2 text-xl rounded-md hover:bg-black ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all flex justify-center items-center">
             Login
             <span className="ml-2">
               <FiLogIn />
@@ -84,7 +84,7 @@ const Login = () => {
       </div>
       <div className="absolute top-4 right-4">
         <button
-          className={`text-blue-500 mr-6 text-base font-semibold hover:text-blue-700 ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
+          className={`text-black mr-6 text-base font-semibold hover:text-blue-700 ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
             selected === "Student" && "border-b-2 border-green-500"
           }`}
           onClick={() => setSelected("Student")}
@@ -92,7 +92,7 @@ const Login = () => {
           Student
         </button>
         <button
-          className={`text-blue-500 mr-6 text-base font-semibold hover:text-blue-700 ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
+          className={`text-black mr-6 text-base font-semibold hover:text-blue-700 ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
             selected === "Faculty" && "border-b-2 border-green-500"
           }`}
           onClick={() => setSelected("Faculty")}
@@ -100,7 +100,7 @@ const Login = () => {
           Faculty
         </button>
         <button
-          className={`text-blue-500 mr-6 text-base font-semibold hover:text-blue-700 ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
+          className={`text-black mr-6 text-base font-semibold hover:text-blue-700 ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
             selected === "Admin" && "border-b-2 border-green-500"
           }`}
           onClick={() => setSelected("Admin")}
