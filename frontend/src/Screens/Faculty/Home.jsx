@@ -26,9 +26,10 @@ const Home = () => {
       {load && (
         <>
           <Navbar />
+          <div className="w-[100%]  mx-auto   flex bg-blue-500  justify-center items-start flex-col container">
           <ul className="flex justify-evenly items-center gap-10 w-[85%] mx-auto my-8">
             <li
-              className={`text-center rounded-sm px-4 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
+              className={`text-center rounded-3xl px-5 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
                 selectedMenu === "My Profile"
                   ? "border-b-2 pb-2 border-blue-500 bg-blue-100 rounded-sm"
                   : "bg-blue-500 text-white hover:bg-blue-600 border-b-2 border-blue-500"
@@ -38,7 +39,7 @@ const Home = () => {
               My Profile
             </li>
             <li
-              className={`text-center rounded-sm px-4 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
+              className={`text-center rounded-3xl px-5 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
                 selectedMenu === "Student Info"
                   ? "border-b-2 pb-2 border-blue-500 bg-blue-100 rounded-sm"
                   : "bg-blue-500 text-white hover:bg-blue-600 border-b-2 border-blue-500"
@@ -48,7 +49,7 @@ const Home = () => {
               Student Info
             </li>
             <li
-              className={`text-center rounded-sm px-4 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
+              className={`text-center rounded-3xl px-5 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
                 selectedMenu === "Upload Marks"
                   ? "border-b-2 pb-2 border-blue-500 bg-blue-100 rounded-sm"
                   : "bg-blue-500 text-white hover:bg-blue-600 border-b-2 border-blue-500"
@@ -58,7 +59,7 @@ const Home = () => {
               Upload Marks
             </li>
             <li
-              className={`text-center rounded-sm px-4 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
+              className={`text-center rounded-3xl px-5 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
                 selectedMenu === "Timetable"
                   ? "border-b-2 pb-2 border-blue-500 bg-blue-100 rounded-sm"
                   : "bg-blue-500 text-white hover:bg-blue-600 border-b-2 border-blue-500"
@@ -68,7 +69,7 @@ const Home = () => {
               Timetable
             </li>
             <li
-              className={`text-center rounded-sm px-4 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
+              className={`text-center rounded-3xl px-5 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
                 selectedMenu === "Notice"
                   ? "border-b-2 pb-2 border-blue-500 bg-blue-100 rounded-sm"
                   : "bg-blue-500 text-white hover:bg-blue-600 border-b-2 border-blue-500"
@@ -78,7 +79,7 @@ const Home = () => {
               Notice
             </li>
             <li
-              className={`text-center rounded-sm px-4 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
+              className={`text-center rounded-3xl px-5 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
                 selectedMenu === "Material"
                   ? "border-b-2 pb-2 border-blue-500 bg-blue-100 rounded-sm"
                   : "bg-blue-500 text-white hover:bg-blue-600 border-b-2 border-blue-500"
@@ -88,7 +89,7 @@ const Home = () => {
               Material
             </li>
             <li
-              className={`text-center rounded-sm px-4 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
+              className={`text-center rounded-3xl px-5 py-2 w-1/5 cursor-pointer ease-linear duration-300 hover:ease-linear hover:duration-300 hover:transition-all transition-all ${
                 selectedMenu === "Attendance"
                   ? "border-b-2 pb-2 border-blue-500 bg-blue-100 rounded-sm"
                   : "bg-blue-500 text-white hover:bg-blue-600 border-b-2 border-blue-500"
@@ -98,6 +99,7 @@ const Home = () => {
               Attendance
             </li>
           </ul>
+          </div>
           <>
             {selectedMenu === "Timetable" && <Timetable />}
             {selectedMenu === "Upload Marks" && <Marks />}

@@ -7,7 +7,7 @@ const Navbar = () => {
   const router = useLocation();
   const navigate = useNavigate();
   return (
-    <div className="shadow-md px-6 py-4 flex justify-between items-center">
+    <div className="shadow-md bg-cyan-700 px-6 py-3 flex justify-between items-center">
       <p
         className="font-semibold text-2xl flex justify-center items-center cursor-pointer"
         onClick={() => navigate("/")}

@@ -24,6 +24,10 @@ app.use("/api/subject", require("./routes/subject"));
 app.use("/api/marks", require("./routes/marks"));
 app.use("/api/branch", require("./routes/branch"));
 app.use('/api/attendance', require('./routes/attendance'))
+app.use('/api/grievances', require('./routes/grievances'))
+app.use('/api/alumni', require('./routes/alumni'));
+
+
 
 app.listen(port, () => {
   console.log(`Server Listening On http://localhost:${port}`);
