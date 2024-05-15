@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Alumni = require('../models/Other/alumni');
+const Alumni = require('../models/Other/Alumni');
 
 // Create alumni
 router.post('/addAlumni', async (req, res) => {
